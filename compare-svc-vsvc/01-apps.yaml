@@ -68,6 +68,8 @@ spec:
       labels:
         app: details
         version: v1
+      annotations:
+        sidecar.istio.io/inject="false"
     spec:
       serviceAccountName: bookinfo-details
       containers:
@@ -121,6 +123,8 @@ spec:
       labels:
         app: ratings
         version: v1
+      annotations:
+        sidecar.istio.io/inject="false"
     spec:
       serviceAccountName: bookinfo-ratings
       containers:
@@ -174,6 +178,8 @@ spec:
       labels:
         app: reviews
         version: v1
+      annotations:
+        sidecar.istio.io/inject="false"
     spec:
       serviceAccountName: bookinfo-reviews
       containers:
