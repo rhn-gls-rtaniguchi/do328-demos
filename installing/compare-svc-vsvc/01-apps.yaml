@@ -336,7 +336,6 @@ metadata:
     app: productpage
     service: productpage
   name: productpage
-  namespace: example
 spec:
   host: productpage-example.apps.ocp4.example.com
   port:
